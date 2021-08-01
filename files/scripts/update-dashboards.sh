@@ -16,6 +16,8 @@
 
 set -o errexit
 
+set DASHBOARDS_DIRECTORY=/etc/grafana/provisioning/dashboards/
+
 readonly URL=${URL:-"http://localhost:3000"}
 readonly LOGIN=${LOGIN:-"admin:admin"}
 readonly DASHBOARDS_DIRECTORY=${DASHBOARDS_DIRECTORY:-"./grafana/dashboards"}
