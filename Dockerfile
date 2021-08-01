@@ -12,4 +12,4 @@ RUN apk update; apk add curl jq
 RUN chmod +x /usr/share/grafana/scripts/update-dashboards.sh
 USER grafana
 
-RUN /home/grafana/update-dashboards.sh
+RUN /usr/share/grafana/scripts/update-dashboards.sh
