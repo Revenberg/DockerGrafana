@@ -12,7 +12,7 @@ RUN apk update; apk add curl jq
 RUN chmod +x /usr/share/grafana/scripts/dashboard.sh
 RUN cat /run.sh > /run.sh.bak
 RUN echo "/usr/share/grafana/scripts/dashboard.sh" > /run.sh
-RUN CAT /run.sh.bak >> /run.sh
+RUN cat /run.sh.bak >> /run.sh
 RUN RM run.sh.bak
 
 USER grafana
