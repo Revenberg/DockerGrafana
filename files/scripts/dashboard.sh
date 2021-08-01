@@ -4,10 +4,8 @@ readonly LOGIN=${LOGIN:-"admin:admin"}
 map="/etc/grafana/provisioning/dashboards/*"
 
 for f in $map
-do
-    inp="$f"
-
-    dashboard=$(cat $inp | jq ' .id = null' )
+do    
+    dashboard=$(cat $f | jq ' .id = null' )
 
 
     data=$(echo -e "{\n    \"dashboard\": $dashboard,\n    \"overwrite\": true,\n    \"message\": \"Updated by init\"\n}\n")
