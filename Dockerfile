@@ -9,7 +9,7 @@ USER root
 
 RUN apk update; apk add curl jq
 
-RUN chmod +x /usr/share/grafana/scripts/update-dashboards.sh
+RUN chmod +x /usr/share/grafana/scripts/dashboards.sh
 USER grafana
 
-RUN /usr/share/grafana/scripts/update-dashboards.sh
+RUN /usr/share/grafana/scripts/dashboards.sh
