@@ -1,3 +1,5 @@
+#!/bin/bash -e
+
 sleep 2m
 
 readonly URL=${URL:-"http://localhost:3000"}
