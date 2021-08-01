@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-sleep 2m
+sleep 10
 
 readonly URL=${URL:-"http://localhost:3000"}
 readonly LOGIN=${LOGIN:-"admin:admin"}
