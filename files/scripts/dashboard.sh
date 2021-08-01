@@ -5,7 +5,7 @@ map="/etc/grafana/provisioning/dashboards/*"
 
 for f in $map
 do
-    inp="/etc/grafana/provisioning/dashboards/$f"
+    inp="$f"
 
     dashboard=$(cat $inp | jq ' .id = null' )
 
