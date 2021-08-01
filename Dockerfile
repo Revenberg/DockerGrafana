@@ -13,6 +13,6 @@ RUN chmod +x /usr/share/grafana/scripts/dashboard.sh
 RUN cat /run.sh > /run.sh.bak
 RUN echo "/usr/share/grafana/scripts/dashboard.sh" > /run.sh
 RUN cat /run.sh.bak >> /run.sh
-RUN RM run.sh.bak
+RUN rm run.sh.bak
 
 USER grafana
