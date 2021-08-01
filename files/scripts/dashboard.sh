@@ -5,7 +5,7 @@ dashboard=$(cat $1 | jq ' .id = null' )
 
 echo $dashboard
 
-data=${echo -e "{\n    \"dashboard\": $dashboard,\n    \"overwrite\": true,\n    \"message\": \"Updated by ansible\"\n}\n"}
+data=$(echo -e "{\n    \"dashboard\": $dashboard,\n    \"overwrite\": true,\n    \"message\": \"Updated by ansible\"\n}\n")
 
 echo $data
 
