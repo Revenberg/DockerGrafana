@@ -3,7 +3,7 @@
 git pull
 chmod +x build.sh
 
-docker image build --no-cache -t revenberg/grafana . 
+docker image build -t revenberg/grafana . 
 
 docker run -p 3000:3000 revenberg/grafana
 
