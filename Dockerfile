@@ -18,4 +18,3 @@ RUN chmod +x /run.sh
 RUN echo "/run_grafana.sh" > /run.sh
 
 USER grafana
-
