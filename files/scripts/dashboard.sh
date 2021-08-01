@@ -1,7 +1,10 @@
 readonly URL=${URL:-"http://localhost:3000"}
 readonly LOGIN=${LOGIN:-"admin:admin"}
 
-dashboard=$(cat $1 | jq ' .id = null' )
+inp=$1
+inp="/etc/grafana/provisioning/dashboards/grafana-gas.json"
+
+dashboard=$(cat $inp | jq ' .id = null' )
 
 echo $dashboard
 
