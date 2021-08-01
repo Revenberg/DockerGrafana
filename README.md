@@ -1,13 +1,13 @@
-# solarrs485logger
+# grafana
 
 sudo apt install gnupg2 pass
-docker image build -t solarrs485logger  .
+docker image build -t grafana  .
 docker login -u revenberg
-docker image push revenberg/solarrs485logger:latest
+docker image push revenberg/grafana:latest
 
-docker run revenberg/solarrs485logger
+docker run revenberg/grafana
 
 
 docker exec -it ??? /bin/sh
 
-docker push revenberg/solarrs485logger:
+docker push revenberg/grafana:
