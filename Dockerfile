@@ -7,7 +7,7 @@ COPY files/scripts/* /home/grafana
 
 USER root
 
-RUN apk update; apk install curl
+RUN apk update; apk add curl
 
 RUN chmod +x /home/grafana/update-dashboards.sh
 USER grafana
