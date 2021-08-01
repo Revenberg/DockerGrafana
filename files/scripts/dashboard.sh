@@ -1,3 +1,5 @@
+sleep 2m
+
 readonly URL=${URL:-"http://localhost:3000"}
 readonly LOGIN=${LOGIN:-"admin:admin"}
 
