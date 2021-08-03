@@ -3,7 +3,7 @@ datasources:
   type: influxdb
   access: proxy
   database: power
-  url: http://localhost:8086
+  url: http://influxdb:8086
   editable: true
 - name: sunandmoon
   type: fetzerch-sunandmoon-datasource
