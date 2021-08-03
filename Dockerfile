@@ -5,7 +5,7 @@ COPY files/datasources/* /etc/grafana/provisioning/datasources/
 COPY files/plugins/* /etc/grafana/provisioning/plugins/
 COPY files/scripts/* /usr/share/grafana/scripts/
 
-RUN unzip '/etc/grafana/provisioning/plugins/fetzerch-sunandmoon-datasource-0.2.1.zip' -d '/var/lib/grafana/plugins/
+RUN unzip '/etc/grafana/provisioning/plugins/fetzerch-sunandmoon-datasource-0.2.1.zip' -d '/var/lib/grafana/plugins/'
 
 USER root
 
