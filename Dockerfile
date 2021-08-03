@@ -19,5 +19,4 @@ RUN echo "/run_grafana.sh" >> /run.sh
 
 RUN unzip /etc/grafana/provisioning/plugins/fetzerch-sunandmoon-datasource-0.2.1.zip -d /var/lib/grafana/plugins/
 
-RUN ls /var/lib/grafana/plugins/
 USER grafana
