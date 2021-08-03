@@ -1,5 +1,6 @@
 #!/bin/bash -e
 
+echo "import dashboards"
 sleep 10
 
 readonly URL=${URL:-"http://localhost:3000"}
@@ -10,9 +11,9 @@ map="/etc/grafana/provisioning/dashboards/*"
 for f in $map
 do    
     dashboard=$(cat $f | jq ' .id = null' )
-
+    echo "import dashboard"
 
     data=$(echo -e "{\n    \"dashboard\": $dashboard,\n    \"overwrite\": true,\n    \"message\": \"Updated by init\"\n}\n")
 
-    curl -s --user "$LOGIN" -H 'Content-Type: application/json' http://localhost:3000/api/dashboards/db -XPOST -d "$data"
+    curl --user "$LOGIN" -H 'Content-Type: application/json' http://localhost:3000/api/dashboards/db -XPOST -d "$data"
 done
