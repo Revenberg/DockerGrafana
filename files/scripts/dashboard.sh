@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 echo "import dashboards task"
-sleep 20s
+sleep 30s
 
 readonly URL=${URL:-"http://localhost:3000"}
 readonly LOGIN=${LOGIN:-"admin:admin"}
