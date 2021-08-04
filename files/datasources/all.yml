@@ -19,7 +19,7 @@ datasources:
       maxOpenConns: 0         # Grafana v5.4+
       maxIdleConns: 2         # Grafana v5.4+
       connMaxLifetime: 14400  # Grafana v5.4+
-  postgresVersion: 1200
+  postgresVersion: 12
   editable: true
 - name: sunandmoon
   type: fetzerch-sunandmoon-datasource
