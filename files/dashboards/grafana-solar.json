@@ -1220,7 +1220,7 @@
           "calcs": [
             "lastNotNull"
           ],
-          "fields": "/^weather\\.detailed_status$/",
+          "fields": "/^weather detailed_status$/",
           "values": false
         },
         "textMode": "auto"
