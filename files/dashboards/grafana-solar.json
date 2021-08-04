@@ -81,7 +81,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "rs485",
+          "measurement": "p1",
           "orderByTime": "ASC",
           "policy": "default",
           "query": "SELECT sum(\"ac_output_amps_1\"), sum(\"ac_output_amps_2\"), sum(\"ac_output_amps_3\") FROM \"PV\" WHERE $timeFilter GROUP BY time(5m) fill(none)",
@@ -377,7 +377,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "rs485",
+          "measurement": "p1",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "A",
@@ -484,7 +484,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "rs485",
+          "measurement": "p1",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "A",
@@ -584,7 +584,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "rs485",
+          "measurement": "p1",
           "orderByTime": "DESC",
           "policy": "default",
           "refId": "A",
@@ -696,7 +696,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "rs485",
+          "measurement": "p1",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "A",
@@ -1131,7 +1131,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "rs485",
+          "measurement": "p1",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "A",
@@ -1343,7 +1343,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "rs485",
+          "measurement": "p1",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "A",
@@ -1462,7 +1462,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "rs485",
+          "measurement": "p1",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "A",
@@ -1625,7 +1625,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "rs485",
+          "measurement": "p1",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "A",
@@ -1662,7 +1662,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "rs485",
+          "measurement": "p1",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "B",
@@ -1699,7 +1699,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "rs485",
+          "measurement": "p1",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "C",
@@ -1736,7 +1736,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "rs485",
+          "measurement": "p1",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "D",
@@ -1900,7 +1900,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "rs485",
+          "measurement": "p1",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "A",
@@ -1937,7 +1937,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "rs485",
+          "measurement": "p1",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "B",
@@ -1974,7 +1974,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "rs485",
+          "measurement": "p1",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "C",
@@ -2011,7 +2011,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "rs485",
+          "measurement": "p1",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "D",
@@ -2048,7 +2048,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "rs485",
+          "measurement": "p1",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "E",
@@ -2085,7 +2085,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "rs485",
+          "measurement": "p1",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "F",
@@ -2958,7 +2958,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "rs485",
+          "measurement": "p1",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "A",
@@ -3497,7 +3497,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "rs485",
+          "measurement": "p1",
           "orderByTime": "ASC",
           "policy": "10_days",
           "refId": "A",
@@ -3647,7 +3647,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "rs485",
+          "measurement": "p1",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "A",
@@ -3951,6 +3951,6 @@
   },
   "timezone": "browser",
   "title": "Solar",
-  "uid": "3GuKIgRgz",
+  "uid": "4GuKIgRgz",
   "version": 2
 }
