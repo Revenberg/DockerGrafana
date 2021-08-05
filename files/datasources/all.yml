@@ -21,12 +21,6 @@ datasources:
       connMaxLifetime: 14400  # Grafana v5.4+
   postgresVersion: 12
   editable: true
-- name: sunandmoon
-  type: fetzerch-sunandmoon-datasource
-  jsonData:
-    latitude: 53.179851
-    longitude: 6.1682691
-  editable: true
 - name: "Sun and Moon"
   type: fetzerch-sunandmoon-datasource
   jsonData:
@@ -40,3 +34,4 @@ datasources:
   url: http://prometheus:9090
   jsonData:
     httpMethod: POST
+  editable: true
