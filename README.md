@@ -1,13 +1,13 @@
-# grafana
+# DockerGrafana
 
 sudo apt install gnupg2 pass
-docker image build -t grafana  .
+docker image build -t DockerGrafana  .
 docker login -u revenberg
-docker image push revenberg/grafana:latest
+docker image push revenberg/DockerGrafana:latest
 
-docker run revenberg/grafana
+docker run revenberg/DockerGrafana
 
 
 docker exec -it ??? /bin/sh
 
-docker push revenberg/grafana:
+docker push revenberg/DockerGrafana:

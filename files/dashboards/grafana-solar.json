@@ -764,7 +764,7 @@
       "id": 151,
       "options": {
         "alt_field": "",
-        "baseUrl": "https://openweathermap.org/img/wn/",
+        "baseUrl": "https://DockerOpenweathermap.org/img/wn/",
         "height": 75,
         "icon_field": "",
         "singleFill": true,

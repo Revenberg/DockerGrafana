@@ -1,4 +1,4 @@
-FROM grafana/grafana:latest
+FROM DockerGrafana/grafana:latest
 
 COPY files/dashboards/* /etc/grafana/provisioning/dashboards/
 COPY files/datasources/* /etc/grafana/provisioning/datasources/

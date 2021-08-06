@@ -6,7 +6,7 @@ sleep 50s
 readonly URL=${URL:-"http://localhost:3000"}
 readonly LOGIN=${LOGIN:-"admin:admin"}
 
-map="/etc/grafana/provisioning/dashboards/*"
+map="/etc/DockerGrafana/provisioning/dashboards/*"
 
 for f in $map
 do    
