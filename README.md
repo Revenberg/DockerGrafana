@@ -1,7 +1,7 @@
-# DockerGrafana
+# dockergrafana
 
 sudo apt install gnupg2 pass
-docker image build -t DockerGrafana  .
+docker image build -t dockergrafana  .
 docker login -u revenberg
 docker image push revenberg/dockergrafana:latest
 
