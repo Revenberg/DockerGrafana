@@ -24,6 +24,7 @@ datasources:
   access: proxy
   database: power
   url: http://influxdb:8086
+  editable: true
 - name: "Sun and Moon"
   type: fetzerch-sunandmoon-datasource
   jsonData:
