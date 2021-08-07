@@ -1,10 +1,22 @@
 #!/bin/bash
 
-git pull
-chmod +x build.sh
+rc=$(git remote show origin |  grep "local out of date" | wc -l)
 
-docker image build -t revenberg/dockergrafana . 
+if [ $rc -ne "0" ]; then
+    git pull
+    chmod +x build.sh
 
-#docker run -p 3000:3000 revenberg/dockergrafana
+    docker image build -t revenberg/grafana . 
 
-docker push revenberg/dockergrafana
+    docker push revenberg/grafana
+    
+    
+    # testing: 
+
+    echo "==========================================================="
+    echo "=                                                         ="
+    echo "=          docker run -p 3000:3000 revenberg/grafana      ="
+    echo "=                                                         ="
+    echo "==========================================================="
+    # docker run -p 3000:3000 revenberg/grafana
+fi
