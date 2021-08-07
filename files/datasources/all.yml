@@ -7,20 +7,23 @@ datasources:
   database: power
   url: http://influxdb:8086
   editable: true
-- name: power
-  type: postgres
+- name: weather
+  type: influxdb
   access: proxy
-  database: dsmrreader
-  user: dsmrreader
-  password: dsmrreader
-  url: dsmrdb:5432
-  jsonData:
-      sslmode: "disable" # disable/require/verify-ca/verify-full
-      maxOpenConns: 0         # Grafana v5.4+
-      maxIdleConns: 2         # Grafana v5.4+
-      connMaxLifetime: 14400  # Grafana v5.4+
-  postgresVersion: 12
+  database: weather
+  url: http://influxdb:8086
   editable: true
+- name: water
+  type: influxdb
+  access: proxy
+  database: water
+  url: http://influxdb:8086
+  editable: true
+- name: power
+  type: influxdb
+  access: proxy
+  database: power
+  url: http://influxdb:8086
 - name: "Sun and Moon"
   type: fetzerch-sunandmoon-datasource
   jsonData:
