@@ -4,7 +4,7 @@ datasources:
 - name: solar
   type: influxdb
   access: proxy
-  database: power
+  database: solar
   url: http://influxdb:8086
   editable: true
 - name: weather
