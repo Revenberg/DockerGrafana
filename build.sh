@@ -24,3 +24,5 @@ if [ $rc -ne "0" ]; then
     echo "==========================================================="
     # docker run -p 3000:3000 revenberg/grafana
 fi
+
+cd -
