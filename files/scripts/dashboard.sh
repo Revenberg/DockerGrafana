@@ -4,7 +4,7 @@ echo "import dashboards task"
 sleep 50s
 
 readonly URL=${URL:-"http://localhost:3000"}
-readonly LOGIN=${LOGIN:-"admin:admin"}
+readonly LOGIN=${LOGIN:-"pi:pi"}
 
 map="/etc/grafana/provisioning/dashboards/*"
 
