@@ -10,4 +10,4 @@ docker run revenberg/dockergrafana
 
 docker exec -it ??? /bin/sh
 
-docker push revenberg/dockergrafana:
+docker push revenberg/dockergrafana:latest

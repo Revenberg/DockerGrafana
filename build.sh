@@ -19,9 +19,9 @@ if [ $ex == true ]; then
     git pull
     chmod +x build.sh
 
-    docker image build -t revenberg/grafana . 
+    docker image build -t revenberg/grafana:latest . 
 
-    docker push revenberg/grafana
+    docker push revenberg/grafana:latest
     
     
     # testing: 
