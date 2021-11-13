@@ -430,7 +430,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "reading_watermeter_reading_current_value",
+          "expr": "reading_watermeter_reading_current_value/1000",
           "interval": "",
           "legendFormat": "Watermeter",
           "refId": "A"
@@ -1124,7 +1124,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 10,
+        "h": 9,
         "w": 8,
         "x": 16,
         "y": 10
@@ -1506,7 +1506,7 @@
         "h": 3,
         "w": 4,
         "x": 16,
-        "y": 20
+        "y": 19
       },
       "id": 27,
       "interval": null,
@@ -1658,7 +1658,7 @@
         "h": 3,
         "w": 4,
         "x": 20,
-        "y": 20
+        "y": 19
       },
       "id": 19,
       "interval": null,
@@ -1708,5 +1708,5 @@
   "timezone": "",
   "title": "Energieverbruik",
   "uid": "5nkT6iRRz",
-  "version": 19
+  "version": 20
 }
