@@ -1,0 +1,156 @@
+{
+    "annotations": {
+      "list": [
+        {
+          "builtIn": 1,
+          "datasource": "-- Grafana --",
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "name": "Annotations & Alerts",
+          "target": {
+            "limit": 100,
+            "matchAny": false,
+            "tags": [],
+            "type": "dashboard"
+          },
+          "type": "dashboard"
+        }
+      ]
+    },
+    "editable": true,
+    "fiscalYearStartMonth": 0,
+    "gnetId": null,
+    "graphTooltip": 0,
+    "id": 10,
+    "links": [],
+    "liveNow": false,
+    "panels": [
+      {
+        "datasource": "Prometheus",
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "mappings": [],
+            "noValue": "0",
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "semi-dark-red",
+                  "value": null
+                },
+                {
+                  "color": "semi-dark-green",
+                  "value": 1
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 0
+        },
+        "id": 2,
+        "options": {
+          "displayMode": "basic",
+          "orientation": "vertical",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "showUnfilled": true,
+          "text": {}
+        },
+        "pluginVersion": "8.2.3",
+        "targets": [
+          {
+            "exemplar": true,
+            "expr": "zigbee2mqtt_Heit_en_mem_reading_contact",
+            "interval": "",
+            "legendFormat": "Heit en mem",
+            "refId": "A"
+          },
+          {
+            "exemplar": true,
+            "expr": "zigbee2mqtt_Raam_heit_en_mem_reading_contact",
+            "hide": false,
+            "instant": false,
+            "interval": "",
+            "legendFormat": "Raam heit en mem",
+            "refId": "B"
+          },
+          {
+            "exemplar": true,
+            "expr": "zigbee2mqtt_Jelmar_reading_contact",
+            "hide": false,
+            "instant": false,
+            "interval": "",
+            "legendFormat": "Jelmar",
+            "refId": "C"
+          },
+          {
+            "exemplar": true,
+            "expr": "zigbee2mqtt_Roan_reading_contact",
+            "hide": false,
+            "interval": "",
+            "legendFormat": "Roan",
+            "refId": "D"
+          },
+          {
+            "exemplar": true,
+            "expr": "zigbee2mqtt_Senne_reading_contact",
+            "hide": false,
+            "interval": "",
+            "legendFormat": "Senne",
+            "refId": "E"
+          },
+          {
+            "exemplar": true,
+            "expr": "zigbee2mqtt_Schuur_reading_contact",
+            "hide": false,
+            "instant": false,
+            "interval": "",
+            "legendFormat": "Schuur",
+            "refId": "F"
+          },
+          {
+            "exemplar": true,
+            "expr": "zigbee2mqtt_Zolder_reading_contact",
+            "hide": false,
+            "instant": false,
+            "interval": "",
+            "legendFormat": "Schuur",
+            "refId": "G"
+          }
+        ],
+        "title": "Panel Title",
+        "type": "bargauge"
+      }
+    ],
+    "refresh": "30s",
+    "schemaVersion": 31,
+    "style": "dark",
+    "tags": [],
+    "templating": {
+      "list": []
+    },
+    "time": {
+      "from": "now-5m",
+      "to": "now"
+    },
+    "timepicker": {},
+    "timezone": "",
+    "title": "Deuren",
+    "uid": "IY_TzAggk",
+    "version": 3
+  }
