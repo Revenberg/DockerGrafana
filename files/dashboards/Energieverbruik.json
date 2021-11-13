@@ -442,6 +442,30 @@
           "interval": "",
           "legendFormat": "Gas",
           "refId": "B"
+        },
+        {
+          "exemplar": true,
+          "expr": "reading_Generated_All_time",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "Solar",
+          "refId": "C"
+        },
+        {
+          "exemplar": true,
+          "expr": "reading_ELECTRICITY_DELIVERED_TO_CLIENT_LOW_TARIFF",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "Electra laag tarief",
+          "refId": "D"
+        },
+        {
+          "exemplar": true,
+          "expr": "reading_ELECTRICITY_DELIVERED_TO_CLIENT_NORMAL_TARIFF",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "Electra normaal tarief",
+          "refId": "E"
         }
       ],
       "title": "Meterstanden",
@@ -1129,7 +1153,7 @@
         "x": 16,
         "y": 10
       },
-      "id": 39,
+      "id": 41,
       "options": {
         "legend": {
           "calcs": [],
@@ -1155,6 +1179,30 @@
           "interval": "",
           "legendFormat": "Gas",
           "refId": "B"
+        },
+        {
+          "exemplar": true,
+          "expr": "delta(reading_Generated_All_time[1h])",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "Solar",
+          "refId": "C"
+        },
+        {
+          "exemplar": true,
+          "expr": "delta(reading_ELECTRICITY_DELIVERED_TO_CLIENT_LOW_TARIFF[1h])",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "Electra laag tarief",
+          "refId": "D"
+        },
+        {
+          "exemplar": true,
+          "expr": "delta(reading_ELECTRICITY_DELIVERED_TO_CLIENT_NORMAL_TARIFF[1h])",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "Electra normaal tarief",
+          "refId": "E"
         }
       ],
       "timeShift": "1m",
@@ -1708,5 +1756,5 @@
   "timezone": "",
   "title": "Energieverbruik",
   "uid": "5nkT6iRRz",
-  "version": 20
+  "version": 22
 }
