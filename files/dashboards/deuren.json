@@ -145,12 +145,12 @@
       "list": []
     },
     "time": {
-      "from": "now-5m",
+      "from": "now-15m",
       "to": "now"
     },
     "timepicker": {},
     "timezone": "",
     "title": "Deuren",
     "uid": "IY_TzAggk",
-    "version": 3
+    "version": 4
   }
