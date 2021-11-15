@@ -28,6 +28,7 @@
     "panels": [
       {
         "datasource": "Prometheus",
+        "description": "",
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -133,7 +134,7 @@
             "refId": "G"
           }
         ],
-        "title": "Panel Title",
+        "title": "Deuren",
         "type": "bargauge"
       }
     ],
