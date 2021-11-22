@@ -11,7 +11,7 @@ USER root
 
 RUN apk update; apk add curl jq
 
-RUN chmod +x /usr/share/grafana/scripts/dashboard.sh
+RUN chmod +x /usr/share/grafana/scripts/*.sh
 RUN mv /run.sh /run_grafana.sh
 
 RUN echo "#!/bin/bash -e" > /run.sh;echo "/usr/share/grafana/scripts/dashboard.sh &" >> /run.sh;echo "/usr/share/grafana/scripts/user.sh &" >> /run.sh; chmod +x /run.sh; echo "/run_grafana.sh" >> /run.sh
