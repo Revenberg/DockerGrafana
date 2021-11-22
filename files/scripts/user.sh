@@ -12,7 +12,7 @@ curl --user "$LOGIN" -H 'Content-Type: application/json' http://localhost:3000/a
 
 echo "add pi"
 passwrd=$(cat /usr/share/.pswrd)
-data='{ "name": "pi", "username": "pi", "email": "pi@localhome", "password": "$passwrd", "active": "true", "approved": "true"}'
+data='{ "name": "pi", "username": "pi", "email": "pi@localhome", "password": "'$passwrd'", "active": "true", "approved": "true"}'
 curl --user "$LOGIN" -H 'Content-Type: application/json' http://localhost:3000/api/admin/users -XPOST -d "$data"
 
 
