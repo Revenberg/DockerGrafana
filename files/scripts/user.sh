@@ -3,8 +3,8 @@
 echo "import users task"
 sleep 30s
 
-readonly URL=${URL:-"http://localhost:3000"}
-readonly LOGIN=${LOGIN:-"admin:admin"}
+URL=${URL:-"http://localhost:3000"}
+LOGIN=${LOGIN:-"admin:admin"}
 
 echo "add adminuser"
 data='{ "name": "adminuser", "username": "adminuser", "email": "adminuser@localhome", "password": "adminuser", "active": "true", "approved": "true"}'

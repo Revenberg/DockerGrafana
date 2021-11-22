@@ -3,8 +3,8 @@
 echo "import dashboards task"
 sleep 50s
 
-readonly URL=${URL:-"http://localhost:3000"}
-readonly LOGIN=${LOGIN:-"adminuser:adminuser"}
+URL=${URL:-"http://localhost:3000"}
+LOGIN=${LOGIN:-"adminuser:adminuser"}
 
 map="/etc/grafana/provisioning/dashboards/*"
 
