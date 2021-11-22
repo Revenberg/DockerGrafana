@@ -3,7 +3,6 @@
 echo "import users task"
 sleep 30s
 
-URL=${URL:-"http://localhost:3000"}
 LOGIN=${LOGIN:-"admin:admin"}
 
 echo "add adminuser"
