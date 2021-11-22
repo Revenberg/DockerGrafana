@@ -18,7 +18,6 @@ curl --user "$LOGIN" -H 'Content-Type: application/json' http://localhost:3000/a
 echo "add pi"
 passwrd=$(cat /usr/share/.pswrd)
 data='{ "name": "pi", "login": "pi", "email": "pi@localhome", "password": "'$passwrd'", "active": true, "approved": true, "isGrafanaAdmin": true}'
-curl --user "$LOGIN" -H 'Content-Type: application/json' http://localhost:3000/api/admin/users -XPOST -d "$data"
 
 rc=$( curl --user "$LOGIN" -H 'Content-Type: application/json' http://localhost:3000/api/admin/users -XPOST -d "$data" )
 id=$(echo $rc | cut -d':' -f2 | cut -d',' -f1)
