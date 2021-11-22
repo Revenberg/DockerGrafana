@@ -6,7 +6,7 @@ sleep 30s
 LOGIN=${LOGIN:-"admin:admin"}
 
 echo "add adminuser"
-data='{ "name": "adminuser", "login": "adminuser", "email": "adminuser@localhome", "password": "adminuser", "active": true, "approved": true, "isGrafanaAdmin": true}'
+data='{ "name": "adminuser", "login": "adminuser", "email": "adminuser@localhome", "password": "adminuser", "active": true, "approved": true, "isAdmin": true, "isGrafanaAdmin": true, "role":"Admin"}'
 curl --user "$LOGIN" -H 'Content-Type: application/json' http://localhost:3000/api/admin/users -XPOST -d "$data"
 
 echo "add pi"
