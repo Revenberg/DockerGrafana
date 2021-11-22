@@ -8,7 +8,7 @@ readonly LOGIN=${LOGIN:-"admin:admin"}
 
 echo "add user"
 
-passwrd=$(cat /home/pi/.pswrd)
+passwrd=$(cat /usr/share/.pswrd)
 data="name=admin&username=admin&email=admin@locahome&password=admin&active=true,approved=true"
 
 curl --user "$LOGIN" -H 'Content-Type: application/json' http://localhost:3000/api/admin/users -XPOST -d "$data"
