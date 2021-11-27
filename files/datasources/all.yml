@@ -19,10 +19,10 @@ datasources:
   database: water
   url: http://influxdb:8086
   editable: true
-- name: power
+- name: mqtt
   type: influxdb
   access: proxy
-  database: power
+  database: mqtt
   url: http://influxdb:8086
   editable: true
 - name: "Sun and Moon"
